@@ -78,7 +78,7 @@ class ElementHandler {
 
 const script = `
 <script>
-  let limit = 2000;
+  let limit = 5000;
   let counter = setInterval(edit, 10);
   function edit() {
     limit -= 10;
