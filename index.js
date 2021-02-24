@@ -19,20 +19,6 @@ class ElementHandler {
   element(element) {
     if (element.tagName == 'title') {
       element.setInnerContent('Status | KweeksNews Network');
-      element.after(
-        '<link rel="apple-touch-icon" sizes="180x180" href="https://network.kweeksnews.com/apple-touch-icon.png">' +
-          '<link rel="icon" type="image/png" sizes="32x32" href="https://network.kweeksnews.com/favicon-32x32.png">' +
-          '<link rel="icon" type="image/png" sizes="16x16" href="https://network.kweeksnews.com/favicon-16x16.png">' +
-          '<meta property="og:type" content="website">' +
-          '<meta property="og:url" content="https://status.kweeksnews.com/">' +
-          '<meta property="og:title" content="Status | KweeksNews Network">' +
-          '<meta property="og:description" content="Informasi status terkini dan histori kinerja situs-situs KweeksNews Network.">' +
-          '<meta property="og:site_name" content="KweeksNews Network">' +
-          '<meta property="og:ttl" content="345600">' +
-          '<meta name="twitter:creator" content="@kweeksnews">' +
-          '<meta name="twitter:site" content="@kweeksnews">',
-        { html: true },
-      );
       return element;
     }
 
@@ -57,7 +43,23 @@ class ElementHandler {
 
     if (element.tagName == 'head') {
       element.append(
-        '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap">' +
+        '<link rel="apple-touch-icon" sizes="180x180" href="https://network.kweeksnews.com/apple-touch-icon.png">' +
+          '<link rel="icon" type="image/png" sizes="32x32" href="https://network.kweeksnews.com/favicon-32x32.png">' +
+          '<link rel="icon" type="image/png" sizes="16x16" href="https://network.kweeksnews.com/favicon-16x16.png">' +
+          '<meta property="og:type" content="website">' +
+          '<meta property="og:url" content="https://status.kweeksnews.com/">' +
+          '<meta property="og:title" content="Status | KweeksNews Network">' +
+          '<meta property="og:description" content="Informasi status terkini dan histori kinerja situs-situs KweeksNews Network.">' +
+          '<meta property="og:site_name" content="KweeksNews Network">' +
+          '<meta property="og:image" content="https://network.kweeksnews.com/assets/images/kweeksnet-square.png">' +
+          '<meta property="og:image:width" content="700">' +
+          '<meta property="og:image:height" content="495">' +
+          '<meta property="og:ttl" content="345600">' +
+          '<meta name="twitter:card" content="summary_large_image">' +
+          '<meta name="twitter:image" content="https://network.kweeksnews.com/assets/images/kweeksnet-square.png">' +
+          '<meta name="twitter:creator" content="@kweeksnews">' +
+          '<meta name="twitter:site" content="@kweeksnews">' +
+          '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap">' +
           '<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" ' +
           'integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" ' +
           'crossorigin="anonymous" as="script">' +
